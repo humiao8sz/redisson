@@ -426,7 +426,7 @@ public class RedissonListReactiveTest extends BaseReactiveTest {
 
         assertThat(sync(list)).containsExactly(1, 2, 7, 8, 9, 3, 4, 9, 1, 9, 5);
 
-        sync(list.addAll(sync(list.size()), Arrays.asList(0, 5)));
+        //sync(list.addAll(sync(list.size()), Arrays.asList(0, 5)));
 
         assertThat(sync(list)).containsExactly(1, 2, 7, 8, 9, 3, 4, 9, 1, 9, 5, 0, 5);
 

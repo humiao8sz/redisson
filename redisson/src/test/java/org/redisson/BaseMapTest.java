@@ -241,7 +241,7 @@ public abstract class BaseMapTest extends BaseTest {
         }
     }
     
-    protected <K, V> MapWriter<K, V> createMapWriter(Map<K, V> map) {
+    protected <K, V> MapWriter<K, V> createMapWriter(final Map<K, V> map) {
         return new MapWriter<K, V>() {
 
             @Override
@@ -269,7 +269,7 @@ public abstract class BaseMapTest extends BaseTest {
         };
     }
     
-    protected <K, V> MapLoader<K, V> createMapLoader(Map<K, V> map) {
+    protected <K, V> MapLoader<K, V> createMapLoader(final Map<K, V> map) {
         return new MapLoader<K, V>() {
             @Override
             public V load(K key) {
